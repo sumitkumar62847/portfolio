@@ -2,23 +2,73 @@
     margin: 0;
     padding: 0;
 }
-
 .header01{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-    background-color: lightgray;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    font-size: 24px;
-    text-align: center;
-    justify-items: center;
+    width: 96vw;
+    height: 80px;
+    display: flex;
     align-items: center;
-    place-items: center;
-    font-weight: bold;
-    color: white;
-    transition: background-color 0.5s ease;
-    cursor: pointer;
-    position: sticky;
+    justify-content: space-between;
+    padding:0 2vw;
+    background-color: #4e4c4eab; 
     
 }
+.mainlogo{
+    width: 30vw;
+    font-size: medium;
+}
+
+
+
+.lcontainer{
+    display: grid;
+    grid-template-columns: 5vw 5vw 5vw 5vw 5vw;
+    gap: 3vw;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.litem{
+
+}
+
+.lanchertag{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1068px) {
+    .lcontainer{
+        grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
+        gap: 3vw;
+    }
+    .mainlogo{
+        font-size: small;
+    }
+    .header01{
+        height: 60px;
+    }
+}
+.menuicon{
+    display: none;
+}
+
+@media screen and (max-width:650px){
+    .lcontainer{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+    }
+    .mainlogo{
+        width: 60vw;
+    }
+
+    
+}
+
+
+

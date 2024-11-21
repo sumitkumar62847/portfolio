@@ -1,9 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(177, 182, 186);
 }
 .header01{
-    width: 96vw;
+    width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
@@ -14,12 +19,25 @@
 }
 .mainlogo{
     width: 30vw;
+    color: rgb(22, 25, 28);
     font-size: medium;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display:none;
+    color: white;
+    font-size: 30px;
+    justify-content: end;
+
 }
 
 
 
-.lcontainer{
+.ulcontainer{
     display: grid;
     grid-template-columns: 5vw 5vw 5vw 5vw 5vw;
     gap: 3vw;
@@ -27,19 +45,20 @@
     text-decoration: none;
 
 }
-.litem{
 
+.nav-a{
+    color: rgb(22, 25, 28);
 }
 
-.lanchertag{
-    text-decoration: none;
-    color: black;
+.nav-a:hover{
+    color: antiquewhite;
 }
+
+
 
 @media screen and (max-width: 1068px) {
-    .lcontainer{
+    .ulcontainer{
         grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
-        gap: 3vw;
     }
     .mainlogo{
         font-size: small;
@@ -48,14 +67,39 @@
         height: 60px;
     }
 }
-.menuicon{
-    display: none;
-}
+
 
 @media screen and (max-width:650px){
-    .lcontainer{
-        display: none;
+    .ulcontainer{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        right: -1000px;
+        width: 40vw;
+        height: 100vh;
+        transition: all 0.5s;
+        background: rgb(102, 121, 115);
+        opacity: 0.7;
+        justify-content: start;
+        text-align: center;
+        margin-top: 10px;
+        color: black;
     }
+
+    #check:checked ~ .ulcontainer{
+        right: 0;
+    }
+    .navlistitem{
+        padding: 20px 0;
+    }
+    .navlistitem:hover{
+        border: 2px solid rgb(69, 130, 110);
+    }
+    .nav-a:hover{
+        color: antiquewhite;
+    }
+
     .menuicon{
         display: block;
         cursor: pointer;
@@ -66,6 +110,11 @@
     .mainlogo{
         width: 60vw;
     }
+    .checkbtn{
+        display: block;
+        padding-right: 20px;
+    }
+    
 
     
 }

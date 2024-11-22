@@ -26,7 +26,7 @@ body{
 .mainlogo{
     width: 30vw;
     height: 50px;
-    color: rgb(22, 25, 28);
+    color: rgb(255, 255, 255);
     font-size: medium;
     display: flex;
 }
@@ -36,7 +36,8 @@ body{
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
 }
 .logotext{
     align-self: center;
@@ -61,7 +62,7 @@ body{
 
 .ulcontainer{
     display: grid;
-    grid-template-columns: 5vw 5vw 5vw 5vw 5vw;
+    grid-template-columns: 6vw 7vw 7vw 9vw 10vw;
     gap: 3vw;
     list-style-type: none;
     text-decoration: none;
@@ -69,18 +70,22 @@ body{
 }
 
 .nav-a{
-    color: rgb(22, 25, 28);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .nav-a:hover{
-    color: antiquewhite;
+    color: rgb(225, 97, 245);
+    text-decoration: underline;
 }
 
 
 
 @media screen and (max-width: 1068px) {
     .ulcontainer{
-        grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
+        grid-template-columns: 8vw 9vw 9vw 11vw 12vw;
+        gap: 3vw;
     }
     .mainlogo{
         font-size: small;
@@ -88,38 +93,46 @@ body{
     .header01{
         height: 60px;
     }
+    .nav-a{
+        font-size: 15px;
+    }
 }
 
 
-@media screen and (max-width:650px){
+@media screen and (max-width:700px){
     .ulcontainer{
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 50px;
+        top: 49px;
         right: -1000px;
         width: 40vw;
         height: 100vh;
         transition: all 0.5s;
-        background: rgb(102, 121, 115);
+        background: #4e4c4eab;
         justify-content: start;
+        align-items: center;
         text-align: center;
         margin-top: 10px;
         color: black;
+        justify-items: center;
+
     }
 
     #check:checked ~ .ulcontainer{
         right: 0;
     }
     .navlistitem{
-        padding: 20px 0;
+        align-content: center;
+        width: 60%;
+        height: 30px;
+        border-radius: 5px;
+        margin: 20px 0;
     }
     .navlistitem:hover{
-        border: 2px solid rgb(69, 130, 110);
+        background-color: #92869254;   
     }
-    .nav-a:hover{
-        color: antiquewhite;
-    }
+    
 
     .menuicon{
         display: block;
@@ -156,6 +169,37 @@ body{
     z-index: 1;
     background-position: center;
 }
+.changetext{
+    color: white;
+    font-size: 30px;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+.changingtext{
+    color: rgb(225, 97, 245);
+}
+.blinkingcursor{
+    color: rgb(0, 0, 0);
+    animation: blink 0.7s infinite;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 
 
 

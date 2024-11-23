@@ -31,3 +31,47 @@ function erase() {
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(type, nextPhraseDelay);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(bgchange, 100);
+});
+function bgchange() {
+  if (window.scrollY < 10) {
+    document.getElementById("header01").style.backgroundColor = 'rgb(0, 0, 255)';  
+    document.getElementById("header01").style.opacity = '1';
+  
+    document.querySelector(".logoimage").style.borderColor = 'white'; 
+    document.querySelector(".mainlogo").style.color = 'white';
+    document.getElementsByClassName("checkbtn")[0].style.color = 'white'; 
+    document.getElementsByClassName("ulcontainer")[0].style.backgroundColor = 'blue';  
+
+    let elements = document.getElementsByClassName('nav-a');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.color = 'white';
+    }
+
+
+  } 
+  else {
+    document.getElementById("header01").style.backgroundColor = 'white';
+    document.getElementById("header01").style.opacity = '0.8';
+
+    document.querySelector(".mainlogo").style.color = 'blue';
+    document.getElementsByClassName("checkbtn")[0].style.color = 'blue'; 
+    document.getElementsByClassName("ulcontainer")[0].style.backgroundColor = 'white'; 
+
+    document.querySelector(".logoimage").style.borderColor = 'blue'; 
+    let elements = document.getElementsByClassName('nav-a');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.color = 'blue';
+    }
+
+  }
+  setTimeout(bgchange, 100);
+}
+
+
+
+  
+  
+  

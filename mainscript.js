@@ -37,13 +37,13 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 function bgchange() {
   if (window.scrollY < 10) {
-    document.getElementById("header01").style.backgroundColor = 'rgb(0, 0, 255)';  
+    document.getElementById("header01").style.backgroundColor = 'rgb(76, 76, 255)';  
     document.getElementById("header01").style.opacity = '1';
   
     document.querySelector(".logoimage").style.borderColor = 'white'; 
     document.querySelector(".mainlogo").style.color = 'white';
     document.getElementsByClassName("checkbtn")[0].style.color = 'white'; 
-    document.getElementsByClassName("ulcontainer")[0].style.backgroundColor = 'blue';  
+    document.getElementsByClassName("ulcontainer")[0].style.backgroundColor = 'rgb(76, 76, 255)';  
 
     let elements = document.getElementsByClassName('nav-a');
     for (let i = 0; i < elements.length; i++) {
@@ -56,14 +56,14 @@ function bgchange() {
     document.getElementById("header01").style.backgroundColor = 'white';
     document.getElementById("header01").style.opacity = '0.8';
 
-    document.querySelector(".mainlogo").style.color = 'blue';
-    document.getElementsByClassName("checkbtn")[0].style.color = 'blue'; 
+    document.querySelector(".mainlogo").style.color = 'rgb(2,2, 255)';
+    document.getElementsByClassName("checkbtn")[0].style.color = 'rgb(2,2, 255)'; 
     document.getElementsByClassName("ulcontainer")[0].style.backgroundColor = 'white'; 
 
-    document.querySelector(".logoimage").style.borderColor = 'blue'; 
+    document.querySelector(".logoimage").style.borderColor = 'rgb(2,2, 255)'; 
     let elements = document.getElementsByClassName('nav-a');
     for (let i = 0; i < elements.length; i++) {
-      elements[i].style.color = 'blue';
+      elements[i].style.color = 'rgb(2,2, 255)';
     }
 
   }

@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="unkown portfolio not dicide ">
-        <title>MY PERSONAL PORTFOLIO</title>
+        <meta name="description" content="Urvi Singla Personal Portfolio for ">  
+        <link rel="shortcut icon" type="x-icon" href="./image/logoimage.png">
+        <title>Urvi Singla Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1 class="testing">
-
-        </h1>
         <header id="header01">
             <h1 class="mainlogo">
                 <img src="./image/logoimage.png" alt="logoimg"
@@ -46,8 +44,8 @@
 
         <!-- -------------------------------------- -->
 
-        <section class="aboutme">
-            <div class="about-hp">
+        <section class="section02">
+            <div class="aboutme">
                 <h2 class="about-h">About</h2>
                 <p class="about-p">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Sed efficitur, ex a condimentum
@@ -92,11 +90,11 @@
 
                     <div class="infosec-one ">
                         <ul class="infosec-list">
-                            <li class="infolist-item">Degree:<label
-                                    class="infoitem-ans">nahi pata</label></li>
                             <li class="infolist-item">Email:<label
                                     class="infoitem-ans">nahi pata</label></li>
                             <li class="infolist-item">Phone:<label
+                                    class="infoitem-ans">nahi pata</label></li>
+                            <li class="infolist-item">Degree:<label
                                     class="infoitem-ans">nahi pata</label></li>
                             <li class="infolist-item">Likedln:<label
                                     class="infoitem-ans">nahi pata</label></li>
@@ -118,11 +116,11 @@
         </section>
         <!-- -------------------------------------------------->
 
-        <section class="section02">
-            <h1 class="skillhead">Skills</h1>
-            <div class="skillinfo">Lorem ipsum dolor sit amet consectetur
+        <section class="section03">
+            <h2 class="skillhead">Skills</h2>
+            <p class="skillinfo">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Tempore cumque totam repellat veniam accusamus
-                accusantium provident laboriosam fugit vero ipsum.</div>
+                accusantium provident laboriosam fugit vero ipsum.</p>
             <div class="skillitem">
                 <div class="items-s">
                     <div class="skillmeter" style="--percentage: 90%;">
@@ -186,17 +184,17 @@
                 </div>
             </div>
         </section>
-        <section class="section03">
-            <h1 class="contacthead">CONTACT</h1>
-            <div class="contactinfo">Lorem ipsum dolor sit amet consectetur
+        <section class="section04">
+            <h2 class="contacthead">CONTACT</h2>
+            <p class="contactinfo">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Tempore cumque totam repellat veniam accusamus
-                accusantium provident laboriosam fugit vero ipsum.</div>
+                accusantium provident laboriosam fugit vero ipsum.</p>
             <div class="contactcard">
                 <div class="contact-types">
                         <div class="contacttype">
                             <div class="contacttype01"> 
                                 <img src="./image/email.png" alt="email icon"
-                                width="50px" />
+                                width="40px" />
                             </div>
                             <div class="contacttype02">
                                 <p class="contacttype-p1">Email:</p>
@@ -206,7 +204,7 @@
                     <div class="contacttype">
                         <div class="contacttype01"> 
                             <img src="./image/phone-call.png" alt="email icon"
-                            width="50px" />
+                            width="40px" />
                         </div>
                         <div class="contacttype02">
                             <p class="contacttype-p1">Contact:</p>
@@ -217,7 +215,7 @@
                     <div class="contacttype">
                         <div class="contacttype01"> 
                             <img src="./image/whatsapp.png" alt="email icon"
-                            width="50px" />
+                            width="40px" />
                         </div>
                         <div class="contacttype02">
                             <p class="contacttype-p1">Whatsapp:</p>
@@ -228,7 +226,7 @@
                     <div class="contacttype">
                         <div class="contacttype01"> 
                             <img src="./image/twitter.png" alt="email icon"
-                            width="50px" />
+                            width="40px" />
                         </div>
                         <div class="contacttype02">
                             <p class="contacttype-p1">Twitter:</p>
@@ -241,7 +239,7 @@
                 <div class="contactlocation"> 
                     <div class="contacttypepin"> 
                         <img src="./image/pinicon.png" alt="email icon"
-                        width="50px" />
+                        width="40px" />
                         <label class="contacttypepin-l">Lorem ipsum dolor, sit amet consectetur adipisicing.</label>
                     </div>
                     <div class="contactmap">
@@ -250,11 +248,53 @@
                 </div>
             </div>
         </section>
-        <section class="section04">
+        <section class="section05">
+            <h2 class="feedbackhead">Feedback</h2>
+            <p class="feedbackinfo">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Tempore cumque totam repellat veniam accusamus
+                accusantium provident laboriosam fugit vero ipsum.</p>
+            <form class="feedbackform">
+                <div class="form01">
+                    <div class="form-n">
+                        <label  for="fname">Full Name:</label>
+                        <input  type="text" id="fname" required name="fname" >
+                    </div>
+                    <div class="form-e">
+                        <label  for="email">Email:</label>
+                        <input type="email" id="email" required name="email">
+                    </div>
+                </div>
+                <div class="form02">
+                    <label  for="subject">Subject:</label>
+                    <input type="text" id="subject" required name="subject">
+                </div>
+                <div class="form03 s01">
+                    <label  for="message">Message:</label>
+                    <textarea id="message" name="message" required rows="10"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" onclick="sendformdata(event)">SEND MESSAGE</button>
+
+                </div>
+            </form>
 
         </section>
 
         <footer class="footer">
+            <div class="footertext">
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut nisi praesentium. Nulla numquam quasi cumque repudiandae deserunt corporis. Aliquam.
+
+                </P>
+                <p>Designed by Sumit kumar and Urvi singla</p>
+                <p style="padding: 5px;">Follow</p>
+                <div class="socialmedia">
+                    <a href="#"><img src="./image/email.png" alt="facebook" width="30px"></a>
+                    <a href="#"><img src="./image/twitter.png" alt="twitter" width="30px"></a>
+                    <a href="#"><img src="./image/email.png" alt="instagram" width="30px"></a>
+                </div>
+                <p style="font-size: large;"><strong style="font-size: x-large;">&#169;</strong> All Right Reserved</p>
+    
+            </div>
 
         </footer>
 

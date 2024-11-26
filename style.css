@@ -1,3 +1,14 @@
+/* :root {
+    --circle-size: 100px;
+    --track-color: #e0e0e0;
+    --progress-color: #2196f3;
+    --text-color: #000000;
+    color: var(--text-color);
+    var(--progress-color)
+  } */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -152,11 +163,18 @@ body{
 
 /*------------------------ main containte ------------------------- */
 
-.b-g-img{
+/* .b-g-img{
     width: 100vw;
     height: 100vh;
-    
     background-position: center;
+} */
+
+/* ----------------------- */
+
+.section01{
+    width: 100%;
+    height: auto;
+
 }
 
 .aboutsection{
@@ -199,7 +217,7 @@ body{
     }
 }
 
-.aboutme{
+.section02{
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
@@ -207,7 +225,7 @@ body{
     color: white;
 }
 
-.about-hp{
+.aboutme{
     color: black;
     width: 90%;
     height: 20%;
@@ -367,8 +385,9 @@ body{
 
 }
 
+/* -------------------------------- */
 
-.section02{
+.section03{
     width: 100%;
     height: auto;
     background-color: rgb(234, 236, 255);
@@ -498,16 +517,9 @@ body{
 }
 
 
-/* :root {
-    --circle-size: 100px;
-    --track-color: #e0e0e0;
-    --progress-color: #2196f3;
-    --text-color: #000000;
-    color: var(--text-color);
-    var(--progress-color)
-  } */
+  /* ------------------------------- */
 
-.section03{
+.section04{
     width: 100%;
     height: auto;
     background-color: white;
@@ -650,18 +662,278 @@ body{
     }
 
 }
-.section04{
+
+
+/* --------------------------------------------------------------------- */
+
+
+.section05{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
     background-color: rgb(234, 236, 255);
 }
 
-.footer{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(185, 192, 255);
+.feedbackhead{
+    width: 80%;
+    color: black;
+    font-size: 30px;
+    margin: 0px auto;
+    padding-top: 50px;
+    border-bottom: 2px solid rgb(76, 76, 255);
+}
+.feedbackinfo{
+    width: 80%;
+    color: black;
+    font-size: 15px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.feedbackform{
+    width: 80%;
+    height: auto;
+    margin: 25px auto;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
+.form01{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.form-n{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-n input{
+    width: 60%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.form-n label{
+    width: 40%;
+    font-size: 30px;
+}
+
+.form-e{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-e input{
+    width: 60%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.form-e label{
+    width: 40%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.form02{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.form02 input{
+    width: 80%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.form02 label{
+    width: 20%;
+    font-size: 30px;
+}
+
+
+
+.form03{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.s01{
+    align-items: start;
+}
+.form03 textarea{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    resize: vertical;
+    border: 1px solid rgb(0, 0, 0);
+}
+.form03 label{
+    width: 20%;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1260px){
+    .form-n{
+        flex-direction: column;
+        align-items: start;
+
+    }
+    .form-e{
+        flex-direction: column;
+        align-items: start;
+    }
+    .form02{
+        flex-direction: column;
+        align-items: start;
+        padding-left: 0;
+    }
+    .form03{
+        flex-direction: column;
+        align-items: start;
+        padding-left: 0;
+    }
+    .form-n input{
+        width: 90%;
+    }
+    .form-n label{
+        width: 90%;
+    }
+    .form-e input{
+        width: 90%;
+    }
+    .form-e label{
+        width: 90%;
+    }
+    .form03 textarea{
+        width: 95%;
+    }
+    .form02 input{
+        width: 95%;
+    }
+    .feedbackform label {
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width:660px){
+    .form01 {
+        flex-direction: column;
+    }
+    .form-n{
+        width: 100%;
+
+    }
+    .form-e{
+        width: 100%;
+    }
+    .form-n input{
+        width: 95%;
+    }
+    .form-n label{
+        width: 95%;
+    }
+    .form-e input{
+        width: 95%;
+    }
+    .form-e label{
+        width: 95%;
+    }
+
+}
+
+.btn{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: rgb(76, 76, 255);
+    border-radius: 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(188, 198, 255);
+    border-top: 1px solid rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footertext{
+    text-align: center;
+}
 
 
 

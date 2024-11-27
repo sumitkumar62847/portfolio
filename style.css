@@ -19,6 +19,7 @@
 
 body{
     background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
 }
 
 /*------------------ header and sidebar css -----------------------------*/
@@ -29,6 +30,7 @@ body{
     display: flex;
     position: fixed;
     align-items: center;
+    background-color: rgb(76, 76, 255);
     justify-content: space-between;
     padding:0 2vw;
     
@@ -80,9 +82,13 @@ body{
 }
 
 .nav-a{
-    color: rgb(76, 76, 255);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     text-transform: uppercase;
+}
+.nav-a.active{
+    font-weight:900;
+    text-decoration: underline;
 }
 
 .nav-a:hover{
@@ -161,6 +167,13 @@ body{
     }
 }
 
+.scrollup{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+}
+
 /*------------------------ main containte ------------------------- */
 
 /* .b-g-img{
@@ -217,6 +230,7 @@ body{
     }
 }
 
+/* ------------------------------- */
 .section02{
     width: 100%;
     height: auto;
@@ -382,6 +396,12 @@ body{
         transition-duration: 1s;
     }
     
+}
+
+@media screen and (max-width:500px){
+    .aboutreso01{
+        width: 100%;
+    }
 
 }
 
@@ -394,7 +414,7 @@ body{
 }
 
 .skillhead{
-    width: 80vw;
+    width: 80%;
     color: black;
     font-size: 30px;
     margin: 0px auto;
@@ -402,7 +422,7 @@ body{
     border-bottom: 2px solid rgb(76, 76, 255);
 }
 .skillinfo{
-    width: 80vw;
+    width: 80%;
     color: black;
     font-size: 15px;
     margin: 0px auto;
@@ -422,7 +442,7 @@ body{
     width: 20vw;
     height: 20vw;
     margin: 20px 40px;
-    padding: 20px;
+    padding: 30px 10px 10px 10px;
     background-color: white;
     border-radius: 5px;
     transition-duration:1s;
@@ -462,19 +482,29 @@ body{
     font-size: 20px;
 }
 .skill-m-p1{
+    width: 100%;
+    text-align: center;
     margin-top: 5px;
 }
 
 .skill-m-p2{
+    text-align: center;
     margin-bottom: 5px;
 }
 
-@media screen and (mAX-width:1420PX){
+@media screen and (min-width:1800PX){
+    .skillmeter p{
+        font-size: 25px;
+    }    
+
+}
+
+@media screen and (max-width:1420PX){
     .items-s{
         width: 18vw;
         height: 18vw;
         margin: 10px 20px;
-        padding: 20px;
+        padding: 10px;
         transition-duration: 1s;
     }
     .skillmeter p{
@@ -483,36 +513,30 @@ body{
 }
 
 @media screen and (mAX-width:1000PX){
-    .items-s{
-        width: 25vw;
-        height: 25vw;
-        margin: 10px 20px;
-        padding: 20px;
-        transition-duration: 1s;
-
-    }
     .skillmeter p{
-        font-size: 15px;
+        font-size: 11px;
     }
     
 }
 @media screen and (max-width:800px){
     
     .skillmeter p{
-        font-size: 12px;
+        font-size: 8px;
     }
 }
 @media screen and (max-width:600px){
     .skillmeter p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .items-s{
-        width: 75vw;
-        height: 75vw;
+        width: 35vw;
+        height: 35vw;
         margin: auto;
         margin-top: 30px;
-        padding-top: 40px;
         transition-duration: 1s;
+    }
+    .skillreso01{
+        width: 90%;
     }
 }
 
@@ -644,14 +668,14 @@ body{
 }
 @media screen and (max-width:650px){
     .contactmap{
-        width: 100%;
+        width: 95%;
     }
     .contactmap iframe {
         height: 40vw;
         margin: 0;
     }
     .contacttype{
-        width: 100%;
+        width: 95%;
         display: flex;
         justify-content: center;
         margin: 10px auto;
@@ -659,6 +683,15 @@ body{
     .contacttype{
         justify-content: start;
 
+    }
+    .contacthead{
+        width: 90%;
+    }
+    .contactinfo{
+        width: 90%;
+    }
+    .contactcard{
+        width: 90%;
     }
 
 }
@@ -842,13 +875,24 @@ body{
     .feedbackform label {
         padding-left: 0;
     }
+    .reso01{
+        width: 90%;
+    }
 
 }
 
 @media screen and (max-width:660px){
     .form01 {
+        width: 90%;
         flex-direction: column;
     }
+    .form02 {
+        width: 90%;
+    }
+    .form03 {
+        width: 90%;
+    }
+
     .form-n{
         width: 100%;
 
@@ -867,6 +911,12 @@ body{
     }
     .form-e label{
         width: 95%;
+    }
+    .feedbackform label{
+        font-size: 15px;
+    }
+    .changetext{
+        font-size: 25px;
     }
 
 }
@@ -888,6 +938,88 @@ body{
     cursor: pointer;
     
 }
+
+.hidden{
+    position: fixed;
+    width: 25%;
+    height: 10vw;
+    top: 80px;
+    left: 37%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 1s all;
+
+}
+.alertbox{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-image: linear-gradient(rgba(76, 76, 255,0.5),rgba(255, 255, 255,0.5));
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 2px rgb(174, 174, 174);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.hidden{
+    display: none;
+}
+
+#closealert{
+    width: 80px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: rgb(76, 76, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width:1100px){
+    #customalert{
+        width: 30%;
+        height: 12vw;
+        left: 35%;
+    }    
+}
+
+@media screen and (max-width:880px){
+    #customalert{
+        width: 40%;
+        height: 17vw;
+        left: 30%;
+    }    
+}
+
+@media screen and (max-width:660px){
+    #customalert{
+        width: 55%;
+        height: 25vw;
+        left: 22%;
+    }    
+}
+
+@media screen and (max-width:480px){
+    #customalert{
+        width: 74%;
+        height: 40vw;
+        left: 13%;
+    }
+    .alertbox{
+        font-size: 15px;
+    }    
+}
+
+
+
+
+
 
 
 
@@ -924,7 +1056,7 @@ body{
 
 .footer{
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: rgb(188, 198, 255);
     border-top: 1px solid rgb(73, 73, 73);
     display: flex;
@@ -933,7 +1065,9 @@ body{
 }
 .footertext{
     text-align: center;
+    padding: 30px;
 }
+
 
 
 

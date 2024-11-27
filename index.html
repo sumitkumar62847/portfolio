@@ -20,19 +20,25 @@
                 <label for="check" class="checkbtn">☰</label>
                 <ul class="ulcontainer">
                     <li class="navlistitem"><a class="nav-a"
-                            href="#">Home</a></li>
+                            href="#home">Home</a></li>
                     <li class="navlistitem"><a class="nav-a"
-                            href="#">About</a></li>
+                            href="#about">About</a></li>
                     <li class="navlistitem"><a class="nav-a"
-                            href="#">Skills</a></li>
+                            href="#skill">Skills</a></li>
                     <li class="navlistitem"><a class="nav-a"
-                            href="#">Contact</a></li>
+                            href="#contact">Contact</a></li>
                     <li class="navlistitem"><a class="nav-a"
-                            href="#">Feedback</a></li>
+                            href="#feedback">Feedback</a></li>
                 </ul>
             </nav>
+            <div class="scrollup">
+                <a href="#home" class="scrollupbtn">
+                    <img src="./image/up-arrow.png" alt="email icon"
+                            width="45px" style="border-radius: 40%;" />
+                </a>
+            </div>
         </header>
-        <section class="section01">
+        <section class="section01" id="home">
             <div class="aboutsection">
                 <div class="changetext">
                     <h1>URVI SINGLA </h1>
@@ -44,8 +50,8 @@
 
         <!-- -------------------------------------- -->
 
-        <section class="section02">
-            <div class="aboutme">
+        <section class="section02" id="about">
+            <div class="aboutme aboutreso01">
                 <h2 class="about-h">About</h2>
                 <p class="about-p">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Sed efficitur, ex a condimentum
@@ -55,7 +61,7 @@
                     euismod, ex vel varius mattis, mauris urna efficitur ex, ac
                     vulputate lectus dolor vel velit.</p>
             </div>
-            <div class="aboutimginfo">
+            <div class="aboutimginfo aboutreso01">
                 <div class="aboutimginfo01">
                     <div class="aboutimg">
                         <img src="./image/aboutimg.jpg" alt="Professional photo"
@@ -67,15 +73,15 @@
                                 href="https://www.instagram.com/singla_urvi?igsh=N2RuNzYzczQzNnR2"
                                 target="_blank"><img src="./image/instaicon.png"
                                     alt="insta icon" width="40px" /></a>
-                            <a class="infoicon infoicon01" href><img
+                            <a class="infoicon infoicon01" href="#" target="_blank"><img
                                     src="./image/linkedlnicon.png"
                                     alt="linkedln icon" width="40px" /></a>
-                            <a class="infoicon" href><img
+                            <a class="infoicon" href="https://github.com/urvi2023" target="_blank"><img
+                                    src="./image/github.png"
+                                    alt="github icon" height="40px" /></a>
+                            <a class="infoicon" href="#" target="_blank"><img
                                     src="./image/twittericon.png"
-                                    alt="twitter icon" height="50px" /></a>
-                            <a class="infoicon" href><img
-                                    src="./image/twittericon.png"
-                                    alt="twitter icon" height="50px" /></a>
+                                    alt="twitter icon" height="40px" /></a>
                         </div>
                     </div>
                 </div>
@@ -116,12 +122,12 @@
         </section>
         <!-- -------------------------------------------------->
 
-        <section class="section03">
-            <h2 class="skillhead">Skills</h2>
-            <p class="skillinfo">Lorem ipsum dolor sit amet consectetur
+        <section class="section03" id="skill">
+            <h2 class="skillhead skillreso01">Skills</h2>
+            <p class="skillinfo skillreso01">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Tempore cumque totam repellat veniam accusamus
                 accusantium provident laboriosam fugit vero ipsum.</p>
-            <div class="skillitem">
+            <div class="skillitem skillreso01">
                 <div class="items-s">
                     <div class="skillmeter" style="--percentage: 90%;">
                         <div class="circle">
@@ -184,7 +190,7 @@
                 </div>
             </div>
         </section>
-        <section class="section04">
+        <section class="section04" id="contact">
             <h2 class="contacthead">CONTACT</h2>
             <p class="contactinfo">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Tempore cumque totam repellat veniam accusamus
@@ -225,7 +231,7 @@
                     </div>
                     <div class="contacttype">
                         <div class="contacttype01"> 
-                            <img src="./image/twitter.png" alt="email icon"
+                            <img src="./image/twittericon.png" alt="email icon"
                             width="40px" />
                         </div>
                         <div class="contacttype02">
@@ -248,35 +254,41 @@
                 </div>
             </div>
         </section>
-        <section class="section05">
-            <h2 class="feedbackhead">Feedback</h2>
-            <p class="feedbackinfo">Lorem ipsum dolor sit amet consectetur
+        <section class="section05" id="feedback">
+            <h2 class="feedbackhead reso01">Feedback</h2>
+            <p class="feedbackinfo reso01">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Tempore cumque totam repellat veniam accusamus
                 accusantium provident laboriosam fugit vero ipsum.</p>
-            <form class="feedbackform">
+            <form class="feedbackform reso01" id="formid">
                 <div class="form01">
                     <div class="form-n">
                         <label  for="fname">Full Name:</label>
-                        <input  type="text" id="fname" required name="fname" >
+                        <input class="removedata"  type="text" id="fname" required name="fname" >
                     </div>
                     <div class="form-e">
                         <label  for="email">Email:</label>
-                        <input type="email" id="email" required name="email">
+                        <input class="removedata" type="email" id="email" required name="email">
                     </div>
                 </div>
                 <div class="form02">
                     <label  for="subject">Subject:</label>
-                    <input type="text" id="subject" required name="subject">
+                    <input class="removedata" type="text" id="subject" required name="subject">
                 </div>
                 <div class="form03 s01">
                     <label  for="message">Message:</label>
-                    <textarea id="message" name="message" required rows="10"></textarea>
+                    <textarea class="removedata" id="message" name="message" required rows="10"></textarea>
                 </div>
                 <div class="btn">
-                    <button type="submit" onclick="sendformdata(event)">SEND MESSAGE</button>
-
+                    <button class="btnsubmit" type="submit" onclick="sendformdata(event)">SEND MESSAGE</button>
                 </div>
             </form>
+            <div id="customalert"  class="hidden">
+                <div class="alertbox ">
+                    <p id="alerttext">Thanks for the feedback</p>
+                    <button id="closealert">Okay</button>
+                </div>
+            </div>
+            
 
         </section>
 
@@ -288,9 +300,9 @@
                 <p>Designed by Sumit kumar and Urvi singla</p>
                 <p style="padding: 5px;">Follow</p>
                 <div class="socialmedia">
-                    <a href="#"><img src="./image/email.png" alt="facebook" width="30px"></a>
-                    <a href="#"><img src="./image/twitter.png" alt="twitter" width="30px"></a>
-                    <a href="#"><img src="./image/email.png" alt="instagram" width="30px"></a>
+                    <a href="https://www.instagram.com/sumit_suthar._?igsh=MXkyamI1bHV3aWQzcg==" target="_blank"><img src="./image/instaicon.png" alt="instagram" width="30px" ></a>
+                    <a href="https://x.com/SumitSutha4155?s=08" target="_blank"><img src="./image/twittericon.png" alt="twitter" width="30px" ></a>
+                    <a href="https://github.com/sumitkumar62847" target="_blank"><img src="./image/github.png" alt="instagram" width="30px"></a>
                 </div>
                 <p style="font-size: large;"><strong style="font-size: x-large;">&#169;</strong> All Right Reserved</p>
     
